@@ -15,7 +15,7 @@ void CinderARKitApp::setup()
     mARSession = [ARSession new];
     mARSession.delegate = mObjcDelegate;
     
-    ARWorldTrackingSessionConfiguration *configuration = [ARWorldTrackingSessionConfiguration new];
+    ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
     configuration.planeDetection = ARPlaneDetectionHorizontal;
     [mARSession runWithConfiguration:configuration];
     
@@ -238,10 +238,11 @@ void CinderARKitApp::draw()
         
         UIView *view = getWindow()->getNativeViewController().view;
         CGSize viewportSize = view.bounds.size;
-        mat4 projectionMatrix = fromMtl([frame.camera projectionMatrixWithViewportSize:viewportSize
-                                                                           orientation:UIInterfaceOrientationLandscapeRight
-                                                                                 zNear:0.001
-                                                                                  zFar:1000]);
+        
+        mat4 projectionMatrix = fromMtl([frame.camera projectionMatrixForOrientation:UIInterfaceOrientationLandscapeRight
+                                                                        viewportSize:viewportSize
+                                                                               zNear:0.001
+                                                                                zFar:1000 ]);
         mtl::setProjectionMatrix(projectionMatrix);
         
         mat4 viewMatrix = fromMtl(matrix_invert(frame.camera.transform));

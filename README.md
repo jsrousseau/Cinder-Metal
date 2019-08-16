@@ -5,6 +5,24 @@ A [Cinder](http://libcinder.org) block for [Apple's Metal](https://developer.app
 
 For a brief summary of the Metal architecture, refer to the [architecture description](https://github.com/wdlindmeier/Cinder-Metal/blob/master/Metal%20Architecture.txt) and the [architecture diagram](https://github.com/wdlindmeier/Cinder-Metal/blob/master/Metal%20Diagram.png). The block API is designed to have a 1:1 class mapping with the Objective-C API, with a few exceptions. With this in mind, users should refer to the [Apple documentation](https://developer.apple.com/library/ios/documentation/MetalKit/Reference/MTKFrameworkReference/index.html#//apple_ref/doc/uid/TP40015356) for usage instructions. Also, see "Gotchas" below.
 
+### Before you start : Learn about Metal
+
+- [Metal Presentation](https://developer.apple.com/metal/)
+- [Metal Sample Code](https://developer.apple.com/metal/sample-code/)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html)
+- [Metal Best Practices Guide](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/MTLBestPracticesGuide/index.html)
+- [WWDC 2019 - Bringing OpenGL Apps to Metal](https://developer.apple.com/videos/play/wwdc2019/611/)
+- [WWDC 2019 - Metal for Machine Learning](https://developer.apple.com/videos/play/wwdc2019/614)
+- [WWDC 2019 - Ray Tracing with Metal](https://developer.apple.com/videos/play/wwdc2019/613)
+- [WWDC 2019 - Metal for Pro Apps](https://developer.apple.com/videos/play/wwdc2019/608)
+- [WWDC 2019 - Modern Rendering with Metal](https://developer.apple.com/videos/play/wwdc2019/601)
+- [WWDC 2019 - Delivering Optimized Metal Apps and Games](https://developer.apple.com/videos/play/wwdc2019/606)
+- [WWDC 2018 - Metal for OpenGL Developers](https://developer.apple.com/videos/play/wwdc2018/604/)
+- [WWDC 2018 - Metal Game Performance Optimization](https://developer.apple.com/videos/play/wwdc2018/612)
+- [WWDC 2018 - Metal for Game Developers](https://developer.apple.com/videos/play/wwdc2018/607)
+- [WWDC 2018 - Metal for VR ](https://developer.apple.com/videos/play/wwdc2018/611)
+- [WWDC 2018 - Metal Shader Debugging and Profiling ](https://developer.apple.com/videos/play/wwdc2018/608)
+
 ### Up and Running
 Once you've created an app using the Metal Basic template in TinderBox, follow these steps to get it building:  
 

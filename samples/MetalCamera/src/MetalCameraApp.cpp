@@ -23,12 +23,19 @@ public:
     CameraOrtho mCam;
 
     CameraManager mCameraManager;
+    
+    Rectf mImageRect;
 };
 
 void MetalCameraApp::setup()
 {
     mRenderDescriptor = mtl::RenderPassDescriptor::create();
     mCameraManager.startCapture();
+    
+    vec2 imageSize(640,480);
+    
+    mImageRect = Rectf(imageSize.x * -0.5, imageSize.y * -0.5,
+                       imageSize.x *  0.5, imageSize.y *  0.5);
 }
 
 void MetalCameraApp::resize()
@@ -57,15 +64,8 @@ void MetalCameraApp::draw()
         
         mtl::translate(getWindowCenter());
         mtl::rotate(M_PI * -0.5f);
-        mtl::scale(1, -1, 1);
         
-        vec2 imageSize(640,480);
-        renderEncoder.draw(mCameraManager.getTexture(),
-                           Rectf( imageSize.x * -0.5,
-                                  imageSize.y * -0.5,
-                                  imageSize.x * 0.5,
-                                  imageSize.y * 0.5
-                                 ));
+        renderEncoder.draw(mCameraManager.getTexture(), mImageRect);
     }
 }
 

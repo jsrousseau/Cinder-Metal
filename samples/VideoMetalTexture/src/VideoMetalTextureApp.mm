@@ -33,7 +33,7 @@ void VideoMetalTextureApp::setup()
     
     mRenderDescriptor = mtl::RenderPassDescriptor::create();
     
-    const fs::path moviePath = getAssetPath("IMG_4529.MP4");
+    const fs::path moviePath = getAssetPath("BOX_BEAT (125BPM loop).mp4"); // thanks Beeple !
     assert( fs::exists(moviePath) );
     mMovieMetal = mtl::MovieMetal::create(moviePath);
     mMovieMetal->play();

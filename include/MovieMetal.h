@@ -3,6 +3,7 @@
 //  VideoMetalTexture
 //
 //  Created by William Lindmeier on 7/11/17.
+//  Modified by JSR on 2019-08-15
 //
 
 #pragma once
@@ -29,7 +30,8 @@ namespace cinder { namespace mtl {
 		struct Options
 		{
 			Options() :
-			mLoops(false)
+			mLoops(true),
+            mVolume(0.5)
 			{}
 
 		public:
@@ -37,10 +39,15 @@ namespace cinder { namespace mtl {
 			Options & loops( bool shouldLoop ) { setLoops( shouldLoop ); return *this; };
 			void setLoops( bool shouldLoop ) { mLoops = shouldLoop; };
 			bool getLoops() const { return mLoops; };
+            
+            Options & volume( float value ) { setVolume( value ); return *this; };
+            void setVolume( float value ) { mVolume = value; };
+            float getVolume() const { return mVolume; };
 
 		protected:
 
 			bool mLoops;
+            float mVolume;
 		};
 
 		static MovieMetalRef create( const ci::fs::path & movieURL, Options options = Options() )

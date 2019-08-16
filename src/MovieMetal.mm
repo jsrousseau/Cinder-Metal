@@ -26,6 +26,7 @@ static void *AVPlayerItemStatusContext = &AVPlayerItemStatusContext;
     CADisplayLink *_displayLink;
     CVMetalTextureCacheRef _videoTextureCache;
 	BOOL _shouldLoop;
+    float _volume;
 }
 
 @property (nonatomic, readonly) ci::mtl::TextureBufferRef & textureLuma;
@@ -44,6 +45,7 @@ static void *AVPlayerItemStatusContext = &AVPlayerItemStatusContext;
     assert(url != nil);
 
 	_shouldLoop = options.getLoops();
+    _volume = options.getVolume();
 
     CVMetalTextureCacheCreate(NULL, NULL, [RendererMetalImpl sharedRenderer].device,
                               NULL, &_videoTextureCache);
@@ -77,7 +79,7 @@ static void *AVPlayerItemStatusContext = &AVPlayerItemStatusContext;
     }
 }
 
-- (void)setIsPlaying:(int)isPlaying
+- (void)setIsPlaying:(bool)isPlaying
 {
     _isPlaying = isPlaying;
 	if ( _isPlaying )
@@ -113,6 +115,7 @@ static void *AVPlayerItemStatusContext = &AVPlayerItemStatusContext;
 			{
                 // Choose the first video track.
                 AVAssetTrack *videoTrack = [tracks objectAtIndex:0];
+
                 [videoTrack loadValuesAsynchronouslyForKeys:@[@"preferredTransform"] completionHandler:^
                 {
                     if ( [videoTrack statusOfValueForKey:@"preferredTransform" error:nil] == AVKeyValueStatusLoaded )
@@ -123,6 +126,7 @@ static void *AVPlayerItemStatusContext = &AVPlayerItemStatusContext;
                         {
                             [item addOutput:_videoOutput];
                             [_player replaceCurrentItemWithPlayerItem:item];
+                            [_player setVolume:_volume];
                             [_videoOutput requestNotificationOfMediaDataChangeWithAdvanceInterval:ONE_FRAME_DURATION];
                         });
                     }
@@ -172,7 +176,7 @@ static void *AVPlayerItemStatusContext = &AVPlayerItemStatusContext;
 		// Simple item playback rewind.
 		if ( _shouldLoop )
 		{
-			[[_player currentItem] seekToTime:kCMTimeZero];
+            [[_player currentItem] seekToTime:kCMTimeZero completionHandler:nil];
 		}
 		if ( self.playbackCompleteHandler )
 		{
