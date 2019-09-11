@@ -5,6 +5,8 @@ CHANGELOG
 --------------
 - updated to macOS 10.14.6 and Xcode 10.3
 - made sure all macOS and iOS samples are still compiling (MPSDynamicScene is not, will probably need macOS 10.15)
+- cleaned up Apple samples that seemed to be considered as Submodules
+- updated gitignore
 
 2019-08-17 JSR
 --------------
