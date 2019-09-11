@@ -4,10 +4,10 @@
 	<block
 		name="Cinder-Metal"
 		id="com.wdlindmeier.cinder_metal"
-		author="William Lindmeier"
+		author="William Lindmeier, Jean-Sebastien Rousseau"
 		summary="Cinder wrapper for Apple's Metal framework"
-		git="ssh://git@github.com:wdlindmeier/Cinder-Metal.git"
-		url="https://github.com/wdlindmeier/Cinder-Metal.git"
+		git="ssh://git@github.com:jsrousseau/Cinder-Metal.git"
+		url="https://github.com/jsrousseau/Cinder-Metal.git"
 		library="https://developer.apple.com/metal/"
 		>
 		<supports os="ios" />

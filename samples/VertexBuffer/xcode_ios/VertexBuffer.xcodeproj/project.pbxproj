@@ -33,7 +33,7 @@
 		A90C316B1C42EB5A00D8E64F /* TextureBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A90C315E1C42EB5A00D8E64F /* TextureBuffer.mm */; };
 		A91F69F41C86153A009EE353 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A91F69F11C86153A009EE353 /* Context.cpp */; };
 		A91F69F51C86153A009EE353 /* Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A91F69F21C86153A009EE353 /* Draw.cpp */; };
-		A92044871BCAD14500CC8AAB /* src in Resources */ = {isa = PBXBuildFile; fileRef = A92044851BCAD14500CC8AAB /* src */; };
+		A92044871BCAD14500CC8AAB /* (null) in Resources */ = {isa = PBXBuildFile; };
 		A920448E1BCAD4BA00CC8AAB /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92044881BCAD17700CC8AAB /* Metal.framework */; };
 		A920448F1BCAD4BA00CC8AAB /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92044891BCAD17700CC8AAB /* MetalKit.framework */; };
 		A92044901BCAD4BA00CC8AAB /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A920448A1BCAD17700CC8AAB /* MetalPerformanceShaders.framework */; };
@@ -382,7 +382,7 @@
 			attributes = {
 				TargetAttributes = {
 					00692BCE14FF149000D0A05E = {
-						DevelopmentTeam = 664M7G3SHW;
+						DevelopmentTeam = 865UV558AG;
 					};
 				};
 			};
@@ -410,7 +410,7 @@
 			files = (
 				00748058165D41390024B57A /* assets in Resources */,
 				E1B899F3AF044B3EA5C594B3 /* Images.xcassets in Resources */,
-				A92044871BCAD14500CC8AAB /* src in Resources */,
+				A92044871BCAD14500CC8AAB /* (null) in Resources */,
 				A9BDFE911C09570900A76FD0 /* MetalIcon.png in Resources */,
 				6906BCA7A507477F8CDF073E /* LaunchScreen.xib in Resources */,
 			);
@@ -530,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VertexBuffer_Prefix.pch;
@@ -551,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VertexBuffer_Prefix.pch;

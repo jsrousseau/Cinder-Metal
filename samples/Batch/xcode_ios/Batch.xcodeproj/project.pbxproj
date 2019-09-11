@@ -371,7 +371,7 @@
 			attributes = {
 				TargetAttributes = {
 					00692BCE14FF149000D0A05E = {
-						DevelopmentTeam = 664M7G3SHW;
+						DevelopmentTeam = 865UV558AG;
 					};
 				};
 			};
@@ -524,7 +524,8 @@
 		00692BF614FF149000D0A05E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 664M7G3SHW;
+				DEVELOPMENT_TEAM = 865UV558AG;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Batch_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -537,7 +538,8 @@
 		00692BF714FF149000D0A05E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 664M7G3SHW;
+				DEVELOPMENT_TEAM = 865UV558AG;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Batch_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;

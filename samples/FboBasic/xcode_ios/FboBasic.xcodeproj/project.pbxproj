@@ -368,7 +368,7 @@
 			attributes = {
 				TargetAttributes = {
 					00692BCE14FF149000D0A05E = {
-						DevelopmentTeam = 664M7G3SHW;
+						DevelopmentTeam = 865UV558AG;
 					};
 				};
 			};
@@ -457,6 +457,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -491,6 +492,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
@@ -514,7 +516,7 @@
 		00692BF614FF149000D0A05E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 664M7G3SHW;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FboBasic_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -531,7 +533,7 @@
 		00692BF714FF149000D0A05E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 664M7G3SHW;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FboBasic_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;

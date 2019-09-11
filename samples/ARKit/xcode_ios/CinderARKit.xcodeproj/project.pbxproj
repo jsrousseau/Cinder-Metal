@@ -388,7 +388,7 @@
 			attributes = {
 				TargetAttributes = {
 					00692BCE14FF149000D0A05E = {
-						DevelopmentTeam = VT3V45XWL3;
+						DevelopmentTeam = 865UV558AG;
 					};
 				};
 			};
@@ -530,7 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				DEVELOPMENT_TEAM = VT3V45XWL3;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CinderARKit_Prefix.pch;
@@ -547,7 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				DEVELOPMENT_TEAM = VT3V45XWL3;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CinderARKit_Prefix.pch;

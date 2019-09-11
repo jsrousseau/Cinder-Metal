@@ -21,7 +21,7 @@
 		A99166CB1BF2CFEC006F710D /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A99166CA1BF2CFEC006F710D /* Shaders.metal */; };
 		A99166CD1BF2D2C4006F710D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99166CC1BF2D2C4006F710D /* Metal.framework */; };
 		A9BDFE8F1C09568300A76FD0 /* MetalIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDFE8E1C09568300A76FD0 /* MetalIcon.png */; };
-		A9FE91971CC9AA1B00E1E6BD /* src in Resources */ = {isa = PBXBuildFile; fileRef = A9FE91961CC9AA1B00E1E6BD /* src */; };
+		A9FE91971CC9AA1B00E1E6BD /* (null) in Resources */ = {isa = PBXBuildFile; };
 		A9FE91B51CC9AA4700E1E6BD /* Argument.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9FE919B1CC9AA4700E1E6BD /* Argument.mm */; };
 		A9FE91B61CC9AA4700E1E6BD /* BlitEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9FE919C1CC9AA4700E1E6BD /* BlitEncoder.mm */; };
 		A9FE91B71CC9AA4700E1E6BD /* CommandBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9FE919D1CC9AA4700E1E6BD /* CommandBuffer.mm */; };
@@ -374,7 +374,7 @@
 				LastUpgradeCheck = 0720;
 				TargetAttributes = {
 					00692BCE14FF149000D0A05E = {
-						DevelopmentTeam = 664M7G3SHW;
+						DevelopmentTeam = 865UV558AG;
 					};
 				};
 			};
@@ -405,7 +405,7 @@
 				A9BDFE8F1C09568300A76FD0 /* MetalIcon.png in Resources */,
 				2BAD4FE1289B425E97D442F1 /* Images.xcassets in Resources */,
 				24B2E43F726B454BBB739D52 /* LaunchScreen.xib in Resources */,
-				A9FE91971CC9AA1B00E1E6BD /* src in Resources */,
+				A9FE91971CC9AA1B00E1E6BD /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +469,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -520,6 +521,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -552,6 +554,7 @@
 		00692BF614FF149000D0A05E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 865UV558AG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ParticleSorting_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -569,6 +572,7 @@
 		00692BF714FF149000D0A05E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 865UV558AG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ParticleSorting_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;

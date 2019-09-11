@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+2019-09-11 JSR
+--------------
+- updated to macOS 10.14.6 and Xcode 10.3
+- made sure all macOS and iOS samples are still compiling (MPSDynamicScene is not, will probably need macOS 10.15)
+
+2019-08-17 JSR
+--------------
+- added Metal samples from Apple
+
 2019-08-15 JSR
 --------------
 - started from the impressive work [William Lindmeir](http://wdlindmeier.com/) did in 2017 with [the original Cinder-Metal block](https://github.com/wdlindmeier/Cinder-Metal)

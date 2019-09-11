@@ -232,7 +232,6 @@
 			children = (
 				77297E0609A84D9B8C59CC67 /* apple */,
 				1BF322CCB34D4B94AC291784 /* Batch.cpp */,
-				4147F85AFE9B4BFC909CC29D /* Context.cpp */,
 				4C7BEC92D0EB47C6B9CB7287 /* Draw.cpp */,
 				67CF6AD01E4E68EC00AAE2A2 /* ImageHelpers.mm */,
 				67CF6AD11E4E68EC00AAE2A2 /* RenderCommandBuffer.mm */,
@@ -240,9 +239,7 @@
 				67CF6AD31E4E68EC00AAE2A2 /* RendererMetalImpl.mm */,
 				67CF6AD41E4E68EC00AAE2A2 /* Scope.mm */,
 				67CF6AD51E4E68EC00AAE2A2 /* Shader.mm */,
-				A5CE26CB64CD4E9F93F109F1 /* UniformBlock.cpp */,
 				4133CC7350C848F0B28DA53C /* Batch.cpp */,
-				9BFADA817D49409A8B661A00 /* VertexBuffer.cpp */,
 				4147F85AFE9B4BFC909CC29D /* Context.cpp */,
 				D944D433225944709E5D2045 /* Draw.cpp */,
 				A5CE26CB64CD4E9F93F109F1 /* UniformBlock.cpp */,
@@ -375,7 +372,7 @@
 			attributes = {
 				TargetAttributes = {
 					00692BCE14FF149000D0A05E = {
-						DevelopmentTeam = 664M7G3SHW;
+						DevelopmentTeam = 865UV558AG;
 					};
 				};
 			};
@@ -464,6 +461,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -497,6 +495,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
@@ -519,7 +518,7 @@
 		00692BF614FF149000D0A05E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 664M7G3SHW;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TextureSlice_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -535,7 +534,7 @@
 		00692BF714FF149000D0A05E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 664M7G3SHW;
+				DEVELOPMENT_TEAM = 865UV558AG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TextureSlice_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
