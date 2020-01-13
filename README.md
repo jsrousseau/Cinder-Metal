@@ -11,6 +11,8 @@ For a brief summary of the Metal architecture, refer to the [architecture descri
 - [Metal Sample Code](https://developer.apple.com/metal/sample-code/)
 - [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html)
 - [Metal Best Practices Guide](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/MTLBestPracticesGuide/index.html)
+
+#### WWDC Talks
 - [WWDC 2019 - Bringing OpenGL Apps to Metal](https://developer.apple.com/videos/play/wwdc2019/611/)
 - [WWDC 2019 - Metal for Machine Learning](https://developer.apple.com/videos/play/wwdc2019/614)
 - [WWDC 2019 - Ray Tracing with Metal](https://developer.apple.com/videos/play/wwdc2019/613)
@@ -21,7 +23,17 @@ For a brief summary of the Metal architecture, refer to the [architecture descri
 - [WWDC 2018 - Metal Game Performance Optimization](https://developer.apple.com/videos/play/wwdc2018/612)
 - [WWDC 2018 - Metal for Game Developers](https://developer.apple.com/videos/play/wwdc2018/607)
 - [WWDC 2018 - Metal for VR ](https://developer.apple.com/videos/play/wwdc2018/611)
-- [WWDC 2018 - Metal Shader Debugging and Profiling ](https://developer.apple.com/videos/play/wwdc2018/608)
+- [WWDC 2018 - Metal Shader Debugging and Profiling](https://developer.apple.com/videos/play/wwdc2018/608)
+- [WWDC 2017 - Introducing Metal 2](https://developer.apple.com/videos/play/wwdc2017/601)
+
+#### Tech Talks
+- [Metal Enhancements for A13 Bionic](https://developer.apple.com/videos/play/tech-talks/608)
+- [Metal 2 on A11 - Overview](https://developer.apple.com/videos/play/tech-talks/602)
+- [Metal 2 on A11 - Imageblocks](https://developer.apple.com/videos/play/tech-talks/603)
+- [Metal 2 on A11 - Tile Shading](https://developer.apple.com/videos/play/tech-talks/604)
+- [Metal 2 on A11 - Raster Order Groups](https://developer.apple.com/videos/play/tech-talks/605)
+- [Metal 2 on A11 - Imageblock Sample Coverage Control](https://developer.apple.com/videos/play/tech-talks/606)
+
 
 ### Up and Running
 Once you've created an app using the Metal Basic template in TinderBox, follow these steps to get it building:  
